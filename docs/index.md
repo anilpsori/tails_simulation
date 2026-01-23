@@ -17,6 +17,7 @@ The phenotype of an individual is defined as a **weighted sum of effect sizes** 
 
 - Mutation rate: `2.36e-8`
 - Recombination rate: `1e-8`
+- Dominance= `0.5`
 - Causal fraction: `FracCausal = 1` (all mutations in the defined genomic element contribute to the trait)
 - Mutation type `m2` uses a *script-based* effect size distribution:
   - draw an effect from a Gamma or Gaussian distribution
