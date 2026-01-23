@@ -25,4 +25,7 @@ A detailed description of the model, parameters, and outputs is in:
 
 ## Citation
 
-Please cite the accompanying manuscript (citation details to be updated upon publication).
+Please cite the accompanying manuscript (citation details to be updated upon publication)
+
+Anil P.S. Ori, Carla Giner-Delgado, Clive J. Hoggart, Paul F. O’Reilly. Stabilising selection enriches the tails of complex traits with rare alleles of large effect.
+bioRxiv 2024.09.12.612687; doi: https://doi.org/10.1101/2024.09.12.612687
