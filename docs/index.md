@@ -3,7 +3,7 @@
 This page documents the SLiM model used to generate the raw simulation data analyzed in the accompanying manuscript.
 
 Script:
-- `20250312_gamma_stabselection_200k_gammacustom.slim`
+- `slim_model_stabilising_selection.slim`
 
 ## Overview
 
