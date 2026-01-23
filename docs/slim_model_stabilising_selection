@@ -1,5 +1,5 @@
 // -------------------------------------
-// Stabilizing selection - densely sampled
+// Forward-in-time model with stabilizing selection
 // -------------------------------------
 // author: Anil Ori
 // date: January 22, 2026
