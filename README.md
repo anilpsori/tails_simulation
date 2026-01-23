@@ -6,6 +6,7 @@ Recent statistical genetics inference suggests that common variants explain most
 
 ## What this simulation does
 
+- uses SLiM software (v4.0) to implement forward-in-time simulation under Wright-Fisher model (neutral model) and under stabilising selection
 - Simulates quantitative polygenic trait in a diploid population (`N = 10,000`) for 110,000 generations:
   - 100,000 generations neutral burn-in to reach equilibrium
   - 10,000 generations of stabilizing selection on trait
