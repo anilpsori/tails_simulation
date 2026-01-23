@@ -5,7 +5,7 @@
 // date: January 22, 2026
 
 /*
-This script produces a forward-simulation model of stabilizing selection on a polygenic quantitative trait across 200K generatons (100K burn-in period + 100K stabilizing selection). It outputs summary statistics on segregating mutations (incl. effect sizes and allele frequencies) and population level characteristics (such as heterozygosity, mean and sd of phenotype), as well as a matrix with mutations counts for each individual. It does not export the full output of the model in order to save time and storage space.
+This script produces a forward-simulation model of stabilizing selection on a polygenic quantitative trait across 110K generatons (100K burn-in period + 10K stabilizing selection). It outputs summary statistics on segregating mutations (incl. effect sizes and allele frequencies) and population level characteristics (such as heterozygosity, mean and sd of phenotype), as well as a matrix with mutations counts for each individual. It does not export the full output of the model in order to save time and storage space.
 
 Mutations are drawn from either a gaussian or a gamma distribution and selection is enacted through a gaussian fitness function. Parameters to set yourself are the multiplication factor of the fitness function (e.g. 1x or 100x) and the size of the genomic segment (e.g. 1e5 or 1e6. The gamma mutation distribution function is specified through a "script-based" function -> which allows for mamking the gamma symmetrical.
 
@@ -115,8 +115,6 @@ initialize(){
 	// -------------------------------------
 
 	initializeMutationRate(2.36e-8); //mutation rate from empirical data
-	//initializeMutationType("m1", 0.5, "f", 0.0); //fixed select with neutral drift
-	//initializeMutationType("m2", 0.5, "g", -0.01026, 0.186); //gamma with mean=-0.01026, a=0.186
 	initializeMutationType("m2", 0.5, "s", "effect = rgamma(1, gamma_mean, 0.186); if (runif(1) < 0.5) {effect = -effect;} return effect;");
 
 	m2.convertToSubstitution = F;
@@ -224,7 +222,7 @@ mutationEffect(m2) {
 // 4. Collect data and write to file
 // -------------------------------------
 
-1:200000 late() {
+1:110000 late() {
 	simcycle = sim.cycle;
 	
 	if(any(simcycle == cycleinfo))
@@ -250,7 +248,7 @@ mutationEffect(m2) {
 //	}	
 }
 
-200000 late()
+110000 late()
 {
 	sim.simulationFinished();
 }
