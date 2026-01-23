@@ -31,6 +31,7 @@ The phenotype of an individual is defined as a **weighted sum of effect sizes** 
   - draw an effect from a Gamma or Gaussian distribution
   - in case of Gamma: The mean was parameterized using three different values (i.e. -0.05, -0.10, -0.20), shape=0.186
   - in case of Gamma: assign a random sign (+/-) with equal probability to obtain a symmetric distribution
+  - in case of Gaussian: N(0,1)
 
 ## Stabilizing selection
 
@@ -57,21 +58,22 @@ Optional:
 
 ## Outputs
 
-The script produces:
+The script is designed in such a way that it calculates all the needed information within simulation, so it is not needed to write full genomes as output. This way the code runs in a fast and memory-efficient way, which scales up easier as well. The script produces three primary types of output (at selected generations):
 
-1) Population summary log:
+1) Population summary statistics:
 - `popstats_<disttype>_mean<gamma_mean>_size<GenomeSize>_f<Factor>_<simID>.txt`
 Includes (at logging intervals): number of mutations, heterozygosity, phenotype mean, phenotype SD.
 
-2) Mutation statistics snapshots (at selected generations):
+2) Mutation summary statistics (at selected generations):
 - `mutstats_<disttype>_mean<gamma_mean>_size<GenomeSize>_f<Factor>_<simID>.txt`
 Created with `sim.outputMutations(...)` and appended over time.
+Includes: e.g. mutation ID, mutation count in population, age of mutation, and effect size.
 
-3) Mutation presence matrix snapshots (at selected generations):
+3) Dummy matrix of mutation presence per individual (at selected generations):
 - `mutdata_<simID>.txt`
-For each sampled generation, stores mutation IDs and a presence/absence vector across all genomes.
+For each sampled generation, stores mutation IDs and a presence/absence vector across all genomes per individual.
 
-Note: `mutdata` can become large because it records per-mutation presence across all genomes.
+Note: `mutdata` can become large because it records per-mutation presence across all genomes. However, this allows for flexibility in downstream analyses and calculate different types of PRS, as done in the current project.
 
 ## Sampling schedule
 
