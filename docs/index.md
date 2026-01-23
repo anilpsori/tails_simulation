@@ -1,4 +1,4 @@
-# SLiM forward-in-time simulation model (stabilizing selection on a polygenic trait)
+# SLiM forward-in-time simulation model of stabilizing selection
 
 This page documents the SLiM model used to generate the raw simulation data analyzed in the accompanying manuscript.
 
