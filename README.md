@@ -6,9 +6,9 @@ Recent statistical genetics inference suggests that common variants explain most
 
 ## What this simulation does
 
-- Simulates a diploid population (`N = 10,000`) for 110,000 generations:
+- Simulates quantitative polygenic trait in a diploid population (`N = 10,000`) for 110,000 generations:
   - 100,000 generations neutral burn-in to reach equilibrium
-  - 10,000 generations of stabilizing selection on an quantitative polygenic trait
+  - 10,000 generations of stabilizing selection on trait
 - Mutational effects are drawn from either a heavy-tail **symmetric Gamma distribution** or a **Gaussian distribution**.
 - Stabilizing selection is applied via a Gaussian fitness function around an optimum phenotype that is set at the start of stabilising selection.
 
