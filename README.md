@@ -16,7 +16,8 @@ Recent statistical genetics inference suggests that common variants explain most
 
 A detailed description of the model, parameters, and outputs is in:
 - `docs/index.md`
-- `docs/slim_model_stabilising_selection.slim`
+- `docs/slim_model_stabilising_selection_gamma.slim`
+- `docs/slim_model_stabilising_selection_gaussian.slim`
 - `docs/run_slim.sh`
 
 ## Status
