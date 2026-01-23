@@ -9,8 +9,9 @@ When using SLiM (v4.0), please cite the following work:
 
 Haller, B. C. & Messer, P. W. SLiM 4: Multispecies Eco-Evolutionary Modeling. The American Naturalist 201, E127–E139 (2023)
 
-Script:
-- `slim_model_stabilising_selection.slim`
+## Main SLiM scripts:
+- `slim_model_stabilising_selection_gamma.slim`
+- `slim_model_stabilising_selection_gamma.slim`
 
 ## Overview
 
