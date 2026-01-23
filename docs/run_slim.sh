@@ -18,4 +18,4 @@ slim \
   -d inputSize=${INPUT_SIZE} \
   -d gamma_mean=${GAMMA_MEAN} \
   -d outdir=\"${OUTDIR}\" \
-  docs/slim_model_stabilising_selection.slim
+  docs/slim_model_stabilising_selection_gamma.slim
