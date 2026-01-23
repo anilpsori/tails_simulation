@@ -26,7 +26,7 @@ The phenotype of an individual is defined as a **weighted sum of effect sizes** 
 ## Stabilizing selection
 
 At the end of generation **100,000**:
-- The phenotype standard deviation `SD` is set to the **SD of the phenotype distribution** at that time.
+- The phenotype standard deviation `SD` is set to the **SD of the phenotype distribution** at that time and held constant during selection.
 - The optimum phenotype is set to the **mean phenotype** at that time and stored as `optPhenotype`.
 
 Fitness is applied by assigning each individual a `fitnessScaling` value:
