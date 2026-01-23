@@ -32,3 +32,7 @@ Please cite the accompanying manuscript (citation details to be updated upon pub
 
 Anil P.S. Ori, Carla Giner-Delgado, Clive J. Hoggart, Paul F. O’Reilly. Stabilising selection enriches the tails of complex traits with rare alleles of large effect.
 bioRxiv 2024.09.12.612687; doi: https://doi.org/10.1101/2024.09.12.612687
+
+When using SLiM (v4.0), please cite the following:
+
+Haller, B. C. & Messer, P. W. SLiM 4: Multispecies Eco-Evolutionary Modeling. The American Naturalist 201, E127–E139 (2023)
