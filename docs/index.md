@@ -1,6 +1,12 @@
 # SLiM forward-in-time simulation model of stabilizing selection
 
-This page documents the SLiM model used to generate the raw simulation data analyzed in the accompanying manuscript.
+This page documents the SLiM model used to generate the raw simulation data analyzed in the accompanying manuscript. More information on SLiM can be found below:
+- Main webpage: https://messerlab.org/slim/
+- Main GitHub: https://github.com/MesserLab/SLiM/
+- GitHub SLiM releases: https://github.com/MesserLab/SLiM/releases
+
+When using SLiM (v4.0), please cite the following work:
+Haller, B. C. & Messer, P. W. SLiM 4: Multispecies Eco-Evolutionary Modeling. The American Naturalist 201, E127–E139 (2023)
 
 Script:
 - `slim_model_stabilising_selection.slim`
