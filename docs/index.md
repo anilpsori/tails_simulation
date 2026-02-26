@@ -11,7 +11,7 @@ Haller, B. C. & Messer, P. W. SLiM 4: Multispecies Eco-Evolutionary Modeling. Th
 
 ## Main SLiM scripts:
 - `slim_model_stabilising_selection_gamma.slim`
-- `slim_model_stabilising_selection_gamma.slim`
+- `slim_model_stabilising_selection_gaussian.slim`
 
 ## Overview
 
